@@ -1,0 +1,46 @@
+﻿@model WebApplication7.Models.CalenderEvent
+@{
+    ViewBag.Title = "MS19806846";
+}
+
+<br />
+<h1 class="btn-primary">Software Security - Assignemnt 02</h1>
+<br />
+<h3>@ViewBag.Message</h3>
+<br />
+@using (Html.BeginForm("SyncToGoogleCalendar", "Home"))
+{
+    <table cellpadding="0" cellspacing="0">
+        <tr>
+            <td>Summary</td>
+            <td>
+                @Html.TextBoxFor(m => m.eventSummary)
+            </td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td>
+                @Html.TextBoxFor(m => m.eventDescription)
+            </td>
+        </tr>
+        <tr>
+            <td>Start Date Time</td>
+            <td>
+                @Html.TextBoxFor(m => m.eventStart) <span class="label label-primary">ex: Date Format dd/MM/yyyy hh:mm (2019-05-24 13:30)</span>
+            </td>
+        </tr>
+        <tr>
+            <td>Start Date Time</td>
+            <td>
+                @Html.TextBoxFor(m => m.eventEnd) <span class="label label-primary">ex: Date Format dd/MM/yyyy hh:mm (2019-05-24 13:30)</span>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input class="button btn-primary" id="submit" type="submit" value="Sync to Google Cal" /></td>
+        </tr>
+    </table>
+
+    
+}
+
