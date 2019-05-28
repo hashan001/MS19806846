@@ -9,4 +9,4 @@ Add the following Google NuGet Packages: Google.Apis, Google.Apis.Auth, Google.A
 
 Update the Authorized redirect URIs. It will be something like http://yourLoclHostAddress/AuthCallback/IndexAsync.
 
-
+For more detail : http://hashanslokuge.blogspot.com/2019/05/google-calender-update-using-oauth2.html
